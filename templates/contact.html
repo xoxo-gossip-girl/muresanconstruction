@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+  /* Decorative heading underline */
+  .heading-line {
+    width: 50px;
+    height: 3px;
+    background-color: #c5a880; /* soft gold accent */
+    margin: 0.5rem 0 1.5rem 0;
+  }
+
+  /* Contact info spacing + divider */
+  .contact-item {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .contact-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Icon styling */
+  .contact-icon {
+    color: #bfa36f;
+    font-size: 1.2rem;
+  }
+
+  /* Link hover effect */
+  .contact-link:hover {
+    color: #bfa36f !important;
+  }
+</style>
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left column: Contact info -->
+      <div class="col-md-5 mb-4" data-aos="fade-right">
+        <h2 class="mb-0 fw-bold">Contact Us</h2>
+        <div class="heading-line"></div>
+        <p>We’d love to hear from you. Whether you’re planning a renovation, have a question, or just want to say hello — get in touch.</p>
+
+        <div class="mt-4">
+          <!-- Address -->
+          <div class="contact-item">
+            <h5 class="d-flex align-items-center mb-1">
+              <i class="bi bi-geo-alt-fill contact-icon me-2"></i> Address
+            </h5>
+            <p class="mb-0">18 Silverton Road<br>Hammersmith London<br>W6 9NY</p>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-item">
+            <h5 class="d-flex align-items-center mb-1">
+              <i class="bi bi-telephone-fill contact-icon me-2"></i> Phone
+            </h5>
+            <p class="mb-0">
+              <a href="tel:+447521116768" class="text-decoration-none text-dark contact-link">07521 1167 768</a>
+            </p>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-item">
+            <h5 class="d-flex align-items-center mb-1">
+              <i class="bi bi-envelope-fill contact-icon me-2"></i> Email
+            </h5>
+            <p class="mb-0">
+              <a href="mailto:contact@muresanconstruction.co.uk" class="text-decoration-none text-dark contact-link">
+                contact@muresanconstruction.co.uk
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center column: Image -->
+      <div class="col-md-2 text-center mb-4" data-aos="fade-up">
+        <img src="/static/img/contactus.jpg" class="img-fluid" alt="Contact Photo" style="max-height: 250px; object-fit: cover;">
+      </div>
+
+      <!-- Right column: Contact form -->
+      <div class="col-md-5" data-aos="fade-left">
+        <form method="POST" class="p-4 bg-light-custom shadow">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input id="name" type="text" class="form-control" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input id="email" type="email" class="form-control" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" class="form-control" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

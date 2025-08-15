@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<h2 class="text-center">Projects</h2>
+<div class="row mt-4">
+    <div class="col-md-4" data-aos="fade-up">
+        <a href="projects/queensgrove" class="project-link">
+            <div class="project-card mb-4">
+                <img class="project-photo" src="/static/img/queensgrove.jpg" alt="Project Image">
+                <div class="project-info">
+                    <h5>Queens Grove</h5>
+                    <p><i class="bi bi-geo-alt-fill me-1"></i> St Johns Wood, London</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4" data-aos="fade-up">
+        <a href="projects/wricklemarsh" class="project-link">
+            <div class="project-card mb-4">
+                <img class="project-photo" src="/static/img/wricklemarsh.jpeg" alt="Project Image">
+                <div class="project-info">
+                    <h5>Wricklemarsh</h5>
+                    <p><i class="bi bi-geo-alt-fill me-1"></i> Blackheath, London</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4" data-aos="fade-up">
+        <a href="projects/silverton" class="project-link">
+            <div class="project-card mb-4">
+                <img class="project-photo" src="/static/img/silverton.jpg" alt="Project Image">
+                <div class="project-info">
+                    <h5>Silverton</h5>
+                    <p><i class="bi bi-geo-alt-fill me-1"></i> Hammersmith, London</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<style>
+.project-card {
+    border: none; /* remove outline */
+    border-radius: 0; /* rectangular corners */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-photo {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-photo {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 12px 0;
+    text-align: center;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+</style>
+{% endblock %}

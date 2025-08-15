@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.info{
+    margin-top: 8px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+}
+</style>
+<div class="row">
+  <div class="column">
+    <img src="/static/img/wricklemarsh.jpeg">
+      <div class="info bg-light p-4 shadow-sm">
+          <h5 class="fw-bold mb-3">Wricklemarsh</h5>
+          <p class="mb-2">
+            <i class="bi bi-geo-alt-fill me-1"></i> Hammersmith, London
+          </p>
+          <p class="mb-2 text-muted">Residential Renovation</p>
+          <p class="mb-0 fw-semibold">Over £250,000</p>
+      </div>
+
+    <img src="/static/img/inside.jpeg">
+    <img src="/static/img/library.jpeg">
+  </div>
+  <div class="column">
+    <img src="/static/img/wricklemarsh3.jpeg">
+    <img src="/static/img/wricklemarsh4.jpeg">
+      <img src="/static/img/wricklemarsh5.jpeg">
+    <img src="/static/img/wricklemarsh6.jpeg">
+  </div>
+  <div class="column">
+    <img src="/static/img/wricklemarsh7.jpeg">
+    <img src="/static/img/wricklemarsh8.jpeg">
+      <img src="/static/img/wricklemarsh9.jpeg">
+    <img src="/static/img/wricklemarsh10.jpeg">
+  </div>
+</div>
+{% endblock %}

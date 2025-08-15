@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+  .p-0 img {
+    display: block;
+  }
+</style>
+<section>
+  <div class="container">
+    <!-- First Row -->
+    <div class="row g-0 align-items-center">
+      <div class="col-md-4 p-0">
+        <img src="/static/img/about1.jpg" class="img-fluid hover-zoom" alt="Team at work">
+      </div>
+      <div class="col-md-4 d-flex flex-column justify-content-center text-center px-4">
+        <h2>About Muresan Construction</h2>
+        <p>
+          Family-run, London-based, over 25 years of experience. Crafting homes that inspire.
+        </p>
+      </div>
+      <div class="col-md-4 p-0">
+        <img src="/static/img/cool.jpg" class="img-fluid hover-zoom" alt="Team at work">
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row g-0 align-items-center">
+      <div class="col-md-4 d-flex flex-column justify-content-center text-end px-4">
+        <h2>Our Journey</h2>
+        <p>
+          From small kitchen renovations to full property transformations, Muresan Construction has been shaping London homes for over 25 years. Every project is a blend of modern innovation and traditional craftsmanship.
+        </p>
+      </div>
+      <div class="col-md-4 p-0">
+        <img src="/static/img/about2.jpg" class="img-fluid hover-zoom" alt="Luxury interior project">
+      </div>
+      <div class="col-md-4 d-flex flex-column justify-content-center text-start px-4">
+        <h2>Our Philosophy</h2>
+        <p>
+          We believe in transparent communication, tailored solutions, and impeccable attention to detail. Our goal is simple: happy clients in homes they love.
+        </p>
+      </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row g-0 align-items-center">
+      <div class="col-md-4 p-0">
+        <img src="/static/img/about3.jpg" class="img-fluid hover-zoom" alt="Project in progress">
+      </div>
+      <div class="col-md-4 d-flex flex-column justify-content-center text-center px-4">
+        <h2>Our Expertise</h2>
+        <p>
+          Renovations, extensions, loft conversions, basements, and new builds — our portfolio spans every kind of project. We take pride in quality, craftsmanship, and client satisfaction.
+        </p>
+      </div>
+      <div class="col-md-4 p-0">
+        <img src="/static/img/about5.jpg" class="img-fluid hover-zoom" alt="Project in progress">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM / PEOPLE -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-5">Meet Our Team</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="/static/img/silvia.jpg" class="img-fluid hover-zoom mb-3" alt="Team member">
+        <h5>Silvia Muresan</h5>
+        <p class="text-muted">Secretary and Web Development</p>
+      </div>
+      <div class="col-md-4">
+        <img src="/static/img/lucian.jpg" class="img-fluid hover-zoom mb-3" alt="Team member">
+        <h4>Lucian Muresan</h4>
+        <p class="text-muted">Founder & Lead Contractor</p>
+      </div>
+      <div class="col-md-4">
+        <img src="/static/img/simona.jpg" class="img-fluid hover-zoom mb-3" alt="Team member">
+        <h5>Simona Muresan</h5>
+        <p class="text-muted">Accounting</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class=" text-center py-5 d-flex align-items-center text-white" style="height: 50vh; background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/static/img/begin.jpg') center/cover no-repeat;">
+  <div class="container">
+    <h2 class="mb-4">Start Your Project Today</h2>
+    <p class="lead mb-4">From concept to completion, we bring your vision to life.</p>
+    <a href="/contact" class="btn btn-custom btn-lg">Request a Consultation</a>
+  </div>
+</section>
+
+<style>
+  .btn-custom {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 28px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0;
+    transition: all 0.3s ease;
+  }
+  .btn-custom:hover {
+    background-color: #bfa36f;
+    color: #000;
+  }
+</style>
+
+{% endblock %}

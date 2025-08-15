@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.info{
+    margin-top: 8px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<div class="row">
+  <div class="column">
+    <img src="/static/img/stair3.jpg">
+      <div class="info bg-light p-4 shadow-sm">
+          <h5 class="fw-bold mb-3">Silverton</h5>
+          <p class="mb-2">
+            <i class="bi bi-geo-alt-fill me-1"></i> Hammersmith, London
+          </p>
+          <p class="mb-2 text-muted">Residential Renovation</p>
+          <p class="mb-0 fw-semibold">Around £400,000</p>
+      </div>
+
+    <img src="/static/img/stair2.jpg">
+    <img src="/static/img/library.jpeg">
+  </div>
+  <div class="column">
+    <img src="/static/img/stairs.jpg">
+    <img src="/static/img/stair1.jpg">
+      <img src="/static/img/stair2.jpg">
+    <img src="/static/img/library.jpeg">
+  </div>
+  <div class="column">
+    <img src="/static/img/about1.jpg">
+    <img src="/static/img/about2.jpg">
+      <img src="/static/img/stair2.jpg">
+    <img src="/static/img/library.jpeg">
+  </div>
+  <div class="column">
+    <img src="/static/img/about3.jpg">
+    <img src="/static/img/library.jpeg">
+      <img src="/static/img/stair2.jpg">
+    <img src="/static/img/library.jpeg">
+  </div>
+</div>
+{% endblock %}

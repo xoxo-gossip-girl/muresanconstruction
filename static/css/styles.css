@@ -1,0 +1,85 @@
+.carousel-item {
+  transition: transform 0.4s ease, border-radius 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#myCarousel .carousel-item:hover {
+  transform: scale(1.02);
+  border-radius: 0px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.project-slide {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.project-slide:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.carousel-caption.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+}
+
+.custom-link {
+  position: relative;
+  color: #888; /* lighter grey */
+  font-weight: 600;
+}
+
+.custom-link:hover {
+  font-size: 2.1rem;       /* slightly longer underline on hover */
+}
+
+.project-photo {
+  height: 200px;          /* uniform height */
+  width: 100%;            /* full width of card */
+  object-fit: cover;      /* crop neatly, no stretch */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #111;
+    background-color: #fff;
+  }
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+a:hover {
+    color: #bfa36f; /* gold accent */
+  }
+.btn-custom {
+    background-color: #000; /* black fill */
+    color: #fff;            /* white text */
+    padding: 12px 28px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border: none;           /* no border */
+    border-radius: 0;       /* sharp rectangle corners */
+    transition: all 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: #bfa36f; /* gold on hover */
+    color: #000;               /* black text on hover */
+  }
+  .bg-light-custom {
+  background-color: #e0dacf !important;
+}
