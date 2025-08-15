@@ -1,10 +1,8 @@
 from flask import Flask, render_template, request, redirect, flash
 import smtplib
 from email.message import EmailMessage
-import os
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'
 
 EMAIL_ADDRESS = "goldsylveon1@gmail.com"
 EMAIL_PASSWORD = "qnuf xjen csho yixt"
