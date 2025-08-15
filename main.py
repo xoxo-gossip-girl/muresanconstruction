@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request, redirect, flash
 import smtplib
 from email.message import EmailMessage
-
+import os
 app = Flask(__name__)
 
-EMAIL_ADDRESS = "goldsylveon1@gmail.com"
-EMAIL_PASSWORD = "qnuf xjen csho yixt"
+EMAIL_ADDRESS = os.environ.get("EMAIL_ADDRESS")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
 @app.route('/')
 def index():
