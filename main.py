@@ -11,6 +11,10 @@ EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
 def index():
     return render_template('index.html')
 
+@app.route('/sitemaps')
+def sitemaps():
+    return render_template('sitemaps.xml')
+
 @app.route('/services')
 def services():
     return render_template('services.html')
