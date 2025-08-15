@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 EMAIL_ADDRESS = os.environ.get("EMAIL_ADDRESS")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
-app.secret_key = os.environ.get("SECRET_KEY")
+secret_key = os.environ.get("SECRET_KEY")
 
 @app.route('/')
 def index():
