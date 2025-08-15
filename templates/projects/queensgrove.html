@@ -12,8 +12,8 @@
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 33.333%;
+  max-width: 33.333%;
   padding: 0 4px;
 }
 
@@ -23,25 +23,10 @@
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
 </style>
 <div class="row">
   <div class="column">
-    <img src="/static/img/stair3.jpg">
+    <img src="/static/img/queensgrove.JPG">
       <div class="info bg-light p-4 shadow-sm">
           <h5 class="fw-bold mb-3">Queens Grove</h5>
           <p class="mb-2">
@@ -50,27 +35,18 @@
           <p class="mb-2 text-muted">Residential Renovation</p>
           <p class="mb-0 fw-semibold">Over £1.5 Million</p>
       </div>
-
-    <img src="/static/img/stair2.jpg">
-    <img src="/static/img/library.jpeg">
+    <img src="/static/img/houserenovations.JPG">
+      <img src="/static/img/houseextensions.JPG">
   </div>
   <div class="column">
-    <img src="/static/img/stairs.jpg">
-    <img src="/static/img/stair1.jpg">
-      <img src="/static/img/stair2.jpg">
-    <img src="/static/img/library.jpeg">
+    <img src="/static/img/livingroom.JPG">
+    <img src="/static/img/bathroom.JPG">
+    <img src="/static/img/talktous.JPG">
   </div>
   <div class="column">
-    <img src="/static/img/about1.jpg">
-    <img src="/static/img/about2.jpg">
-      <img src="/static/img/stair2.jpg">
-    <img src="/static/img/library.jpeg">
-  </div>
-  <div class="column">
-    <img src="/static/img/about3.jpg">
-    <img src="/static/img/library.jpeg">
-      <img src="/static/img/stair2.jpg">
-    <img src="/static/img/library.jpeg">
+    <img src="/static/img/sweet.jpg">
+    <img src="/static/img/services.JPG">
+    <img src="/static/img/stair2.JPG">
   </div>
 </div>
 {% endblock %}
